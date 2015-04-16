@@ -4,7 +4,8 @@
 	and "set horizontal packing" to fix*/
 	width:450px;
 	height:500px;
-	margin-right: 10px;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 #consequence_list { /*the div of all the consequences*/
@@ -18,8 +19,8 @@
 	text-align: center;
 	background-color: grey;
 	color: white;
-	margin-left: 10px;
-	margin-right: 10px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .selected {
