@@ -61,14 +61,14 @@ $(function() {
             offset: 40,
 	    categories: config.xCategories,
             min: 0,
-            max: 9,    //set vertical packing
+            max: 9,    //set vertical packing, original 9
             lineColor: '#FFFFFF'
         },
         yAxis: {
             gridLineWidth: 0,
             labels: { enabled: false },
             min: 0,
-            max: 9,    //set horizontal packing
+            max: 9,    //set horizontal packing, original 9
             title: {text: null,}
         },
         tooltip: {enabled: false},
