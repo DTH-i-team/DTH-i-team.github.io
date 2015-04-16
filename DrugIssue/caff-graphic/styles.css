@@ -38,6 +38,13 @@ img{
 }
 #click-hide{
   font-family:MyriadPro-BoldCond;
+  font-size:13pt;
+}
+#click-hide:hover{
+  cursor:pointer;
+}
+.italicize{
+  font-family:MyriadPro-LightCondIt;
 }
 .sub-info{
   font-family:MyriadPro-BoldCond;
