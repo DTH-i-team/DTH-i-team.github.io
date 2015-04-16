@@ -1,6 +1,8 @@
 
+
+
 $(function() {
-    /*adapted from Joe Kuan, https://joekuan.wordpress.com/2012/09/30/making-a-pictograph-with-highcharts/ 
+    /*adapted from Joe Kuan, https://joekuan.wordpress.com/2012/09/30/making-a-pictograph-with-highcharts/
      * @method fill in the series array
      * @param {object} config - icon layout
      * @param {object} dataArr- an array of pictograph arrays. A pictograph array is [ value,  "url(./image.png)" ]
@@ -10,7 +12,7 @@ $(function() {
         var limit = config.max, y = 0;
         var seriesArray = [];
         var categoryArray = dataArray;
-        
+
         for (var i = 0; i < categoryArray.length; i++) {
             var value = categoryArray[i][0];
             var icon = categoryArray[i][1];
@@ -60,7 +62,7 @@ $(function() {
 	    categories: config.xCategories,
             min: 0,
             max: 9,    //set vertical packing
-            lineColor: '#FFFFFF' 
+            lineColor: '#FFFFFF'
         },
         yAxis: {
             gridLineWidth: 0,
