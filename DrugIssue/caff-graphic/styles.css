@@ -1,3 +1,17 @@
+@font-face {
+    font-family: MyriadPro-Regular;
+    src: url('fonts/MyriadPro-Regular.otf');
+}
+@font-face {
+    font-family: MyriadPro-BoldCond;
+    src: url('fonts/MyriadPro-BoldCond.otf');
+}
+@font-face {
+    font-family: MyriadPro-LightCondIt;
+    src: url('fonts/MyriadPro-LightCondIt.otf');
+}
+
+
 .wrapper{
   width:274px;
   max-height:400px;
@@ -14,8 +28,50 @@ img{
 }
 #statBox{
   padding-top: 55px;
-  padding-left: 55px;
+  padding-left: 90px;
 }
 #warning{
   color:red;
+}
+#hide-this{
+  display:none;
+}
+#click-hide{
+  font-family:MyriadPro-BoldCond;
+}
+.sub-info{
+  font-family:MyriadPro-BoldCond;
+  font-size:15pt;
+}
+body{
+  font-family:MyriadPro-Regular;
+}
+h1{
+  font-family:MyriadPro-BoldCond;
+}
+h3{
+  font-family:MyriadPro-BoldCond;
+  margin-top:0px;
+  font-size:11pt;
+}
+h4{
+  font-family:MyriadPro-Regular;
+  font-size:13pt;
+}
+.icon-img:hover{
+  cursor:pointer;
+  border:1px solid blue;
+  border-radius:3px;
+}
+p{
+  font-size:12pt;
+}
+button{
+  font-family:MyriadPro-BoldCond;
+  font-size:14pt;
+  border-radius:3px;
+}
+.number{
+  font-family:MyriadPro-BoldCond;
+  font-size:15pt;
 }

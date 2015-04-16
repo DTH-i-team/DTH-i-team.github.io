@@ -13,21 +13,45 @@
   <!--main stylesheet-->
   <link rel="stylesheet" type="text/css" href="styles.css" />
 
-
 </head>
 
 <body>
   <div class="container">
 
     <div class="row">
+      <div class="col-lg-12">
+        <h1>How much caffeine is too much?</h1>
+        <h3>by Lindsay Carbonell and Devin Beauchamp</h3>
+      </div>
+      <div class="col-lg-12">
+        <p>Whether it's an energy drink or caffeine tablets, extra caffeine affects the body in different ways. The following interactive graphic includes a variety of caffeine sources, including coffee, caffeine tablets, energy drinks and soda. Click on each source of caffeine to see how each compares to the recommended daily dosage. Each click recommends one serving of the item.</p>
+
+        <p>The information is based off the Caffeine Informer, a website dedicated to tracking caffeine dosages, and DailyMed, a website from the U.S. National Library of Medicine. </p>
+      </div>
+      <div class="col-lg-12">
+        <p id="click-hide">Click for serving size information</p>
+        <div id="hide-this">
+        <p><span class="sub-info">Coca-Cola: </span>one 12 fluid ounce can</p>
+        <p><span class="sub-info">Red Bull: </span>one 8.46 fluid ounce can</p>
+        <p><span class="sub-info">5 Hour Energy: </span>one 2 fluid ounce bottle</p>
+        <p><span class="sub-info">Monster Energy drink: </span>one 16 fluid ounce can</p>
+        <p><span class="sub-info">Caffeine tablets: </span>Stay Awake maximum strength, one tablet (200 mg)</p>
+        <p><span class="sub-info">Caffeine powder: </span>one-sixteenth teaspoon</p>
+        <p><span class="sub-info">Coffee: </span>one grande Starbucks coffee (16 fluid ounces)</p>
+        <p style="font-family:MyriadPro-LightCondIt;">Maximum recommended daily intake of caffeine in this graphic is 400 mg. According to Caffeine Informer, recommended daily dosage is between 300 and 400 mg.</p>
+      </div>
+      </div>
+    </div>
+
+    <div class="row">
       <div class="col-lg-offset-2 col-lg-10 col-md-offset-2 col-md-10 col-sm-12">
-        <img src="images/caff_cola.png" id="btn-cola"></img>
-        <img  src="images/caff_redbull.png" id="btn-redbull"></img>
-        <img src="images/caff_fivehour.png" id="btn-fivehour"></img>
-        <img src="images/caff_powder.png" id="btn-powder"></img>
-        <img src="images/caff_coffee.png" id="btn-coffee"></img>
-        <img src="images/caff_monster.png" id="btn-monster"></img>
-        <img  src="images/caff_tablets.png" id="btn-tablets"></img>
+        <img src="images/caff_cola.png" class="icon-img" id="btn-cola"></img>
+        <img src="images/caff_redbull.png" class="icon-img" id="btn-redbull"></img>
+        <img src="images/caff_fivehour.png" class="icon-img" id="btn-fivehour"></img>
+        <img src="images/caff_powder.png" class="icon-img" id="btn-powder"></img>
+        <img src="images/caff_coffee.png" class="icon-img" id="btn-coffee"></img>
+        <img src="images/caff_monster.png" class="icon-img" id="btn-monster"></img>
+        <img src="images/caff_tablets.png" class="icon-img" id="btn-tablets"></img>
       </div>
     </div><!--end row-->
     <div class="row">
@@ -40,16 +64,17 @@
       </div>
 
       <div class="col-lg-8 col-md-8 col-sm-12" id="statBox">
-        <h4>Total intake of caffeine (mg): <span id="total"></span></h4>
-        <h4>Total servings of Coca Cola: <span id="total_cola"></span></h4>
-        <h4>Total servings of Red Bull: <span id="total_redbull"></span></h4>
-        <h4>Total servings of Five Hour Energy: <span id="total_fivehour"></span></h4>
-        <h4>Total servings of caffeine powder: <span id="total_powder"></span></h4>
-        <h4>Total servings of coffee: <span id="total_coffee"></span></h4>
-        <h4>Total servings of Monster: <span id="total_monster"></span></h4>
-        <h4>Total servings of caffeine tablets: <span id="total_tablets"></span></h4>
+        <h4>Total intake of caffeine: <span id="total" class="number"></span></h4>
+        <h4>Total servings of Coca-Cola: <span id="total_cola" class="number"></span></h4>
+        <h4>Total servings of Red Bull: <span id="total_redbull" class="number"></span></h4>
+        <h4>Total servings of 5 Hour Energy: <span id="total_fivehour" class="number"></span></h4>
+        <h4>Total servings of caffeine powder: <span id="total_powder" class="number"></span></h4>
+        <h4>Total servings of coffee: <span id="total_coffee" class="number"></span></h4>
+        <h4>Total servings of Monster: <span id="total_monster" class="number"></span></h4>
+        <h4>Total servings of caffeine tablets: <span id="total_tablets" class="number"></span></h4>
 
         <h4 id="warning"></h4>
+        <button id="reset">Reset</button>
       </div>
     </div><!--end row-->
 </div><!--end container-->

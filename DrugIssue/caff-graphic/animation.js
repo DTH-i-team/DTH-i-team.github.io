@@ -20,7 +20,7 @@ $(document).ready(function(){
     $("#btn-coffee").click(function(){
       console.log("button coffee");
       //animate
-      if(i < 450){
+      if(i < 400){
       $(".wrapper").animate({
           height: '+=293.2px',
           backgroundColor:'green'
@@ -30,15 +30,9 @@ $(document).ready(function(){
         i+=330;
         total_coffee += 330;
 
-        //if exceeded
-
-
-
-
         //empty out the labels
         $("#total").empty();
         $("#total_coffee").empty();
-
 
         //append new totals
         $("#total").append(i + " mg");
@@ -49,7 +43,7 @@ $(document).ready(function(){
     $("#btn-redbull").click(function(){
 
       //animate
-      if(i < 450){
+      if(i < 400){
         $(".wrapper").animate({
             height: '+=71.2px',
             backgroundColor:'green'
@@ -73,7 +67,7 @@ $(document).ready(function(){
     $("#btn-fivehour").click(function(){
 
         //animate
-        if(i < 450){
+        if(i < 400){
         $(".wrapper").animate({
             height: '+=177.6px',
             backgroundColor:'green'
@@ -97,7 +91,7 @@ $(document).ready(function(){
     $("#btn-cola").click(function(){
 
         //animate
-        if(i < 450){
+        if(i < 400){
         $(".wrapper").animate({
             height: '+=50px', //increased from 30.4 to be more noticeable
             backgroundColor:'green'
@@ -121,7 +115,7 @@ $(document).ready(function(){
     $("#btn-monster").click(function(){
 
         //animate
-        if(i < 450){
+        if(i < 400){
         $(".wrapper").animate({
             height: '+=142.4px',
             backgroundColor:'green'
@@ -145,7 +139,7 @@ $(document).ready(function(){
     $("#btn-tablets").click(function(){
 
       //animate
-      if(i < 450){
+      if(i < 400){
         $(".wrapper").animate({
             height: '+=177.6px',
             backgroundColor:'green'
@@ -169,7 +163,7 @@ $(document).ready(function(){
     $("#btn-powder").click(function(){
 
       //animate
-      if(i < 450){
+      if(i < 400){
         $(".wrapper").animate({
             height: '+=261.6px',
             backgroundColor:'green'
@@ -192,15 +186,15 @@ $(document).ready(function(){
     $("img").click(function(){
       console.log("image click");
       //console.log(i);
-      if(i==450){
-      exceededBy = 450;
+      if(i==400){
+      exceededBy = 400;
       }
-      else if(i>450){
-        exceededBy = i-450;
+      else if(i>400){
+        exceededBy = i-400;
       }
       console.log("ExceededBy: " + exceededBy);
       //turn up the red!
-      if (i >= 450){
+      if (i >= 400){
         $(".wrapper").css("background-color","red");
         $("#warning").empty();
         $("#warning").append("You have exceeded the daily limit of caffeine by: " + exceededBy + "mg");
@@ -211,7 +205,14 @@ $(document).ready(function(){
       }
     });
 
-    function appendExceeded(){
+    $("#reset").click(function(){
+      location.reload();
+    });
 
-    }
+    //serving size info
+    $("#click-hide").click(function(){
+      $("#hide-this").toggle();
+    });
+
+
 });
