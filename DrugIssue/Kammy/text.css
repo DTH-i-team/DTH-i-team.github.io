@@ -1,0 +1,51 @@
+@font-face {
+    font-family: MyriadPro-Regular;
+    src: url('fonts/MyriadPro-Regular.otf');
+}
+@font-face {
+    font-family: MyriadPro-BoldCond;
+    src: url('fonts/MyriadPro-BoldCond.otf');
+}
+@font-face {
+    font-family: MyriadPro-LightCondIt;
+    src: url('fonts/MyriadPro-LightCondIt.otf');
+}
+
+body{
+  font-family:MyriadPro-Regular;
+}
+h1{
+  font-family:MyriadPro-BoldCond;
+}
+h3{
+  font-family:MyriadPro-BoldCond;
+  margin-top:0px;
+  font-size:11pt;
+}
+h4{
+  font-family:MyriadPro-Regular;
+  font-size:13pt;
+}
+.consequence{
+
+  font-size:12.5pt;
+  padding-top:5px;
+  letter-spacing:.5pt;
+  line-height:15pt;
+  text-align:justified;
+  font-family:MyriadPro-BoldCond;
+}
+
+
+
+@media (max-width:767px){
+  .consequence{
+    height:50px;
+    font-size:12.5pt;
+    padding-top:5px;
+    letter-spacing:.5pt;
+    line-height:15pt;
+    text-align:justified;
+    font-family:MyriadPro-BoldCond;
+  }
+}
