@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<people>
+  <person name="Desmond Lindsay" last="Lindsay">
+    <drafted>2nd round (53rd overall) by the New York Mets.</drafted>
+    <position>Outfielder.</position>
+    <bio>Coming to UNC from Out-of-Door Academy in Bradenton, FL.</bio>
+    <photo>PlayerPics/Lindsay.jpg</photo>
+  </person>
+  <person name="Jahmai Jones" last="Jones">
+    <drafted>2nd round (70th overall) by the Los Angeles Angels.</drafted>
+    <position>Outfielder.</position>
+    <bio>Coming to UNC from Wesleyan High School in Roswell, GA.</bio>
+    <photo>PlayerPics/Jones.jpg</photo>
+  </person>
+  <person name="Skye Bolt" last="Bolt">
+    <drafted>4th round (128th overall) by the Oakland Athletics.</drafted>
+    <position>Outfielder.</position>
+    <bio>20 home runs, 32 doubles, 128 RBI, and 28 stolen bases in three years at UNC.</bio>
+    <photo>PlayerPics/Bolt.jpg</photo>
+  </person>
+  <person name="Trent Thornton" last="Thornton">
+    <drafted>5th round (139th overall) by the Houston Astros.</drafted>
+    <position>Right-Handed Pitcher.</position>
+    <bio>22-12 record. Earned run average of 2.82 in 249.1 innings pitched over three seasons at UNC.</bio>
+    <photo>PlayerPics/Thornton.jpg</photo>
+  </person>
+  <person name="Benton Moss" last="Moss">
+    <drafted>6th round (178th overall) by the Tampa Bay Rays.</drafted>
+    <position>Right-Handed Pitcher.</position>
+    <bio>Finished his career at UNC ranked second in strikeouts, fifth in innings pitched, seventh in winning percentage and eighth in wins.</bio>
+    <photo>PlayerPics/Moss.jpg</photo>
+  </person>
+  <person name="Reilly Hovis" last="Hovis">
+    <drafted>9th round (266th overall) by the Miami Marlins.</drafted>
+    <position>Right-Handed Pitcher.</position>
+    <bio>14-1 record with a 2.75 earned run average in three seasons at UNC.</bio>
+    <photo>PlayerPics/Hovis.jpg</photo>
+  </person>
+  <person name="Korey Dunbar" last="Dunbar">
+    <drafted>20th round (596th overall) by the Miami Marlins.</drafted>
+    <position>Catcher.</position>
+    <bio>Six home runs and 16 doubles during the 2015 season.</bio>
+    <photo>PlayerPics/Dunbar.jpg</photo>
+  </person>
+  <person name="Landon Lassiter" last="Lassiter">
+    <drafted>21st round (622nd overall) by the Chicago White Sox.</drafted>
+    <position>Left Fielder.</position>
+    <bio>Made 61 hits and 14 doubles during the 2015 season.</bio>
+    <photo>PlayerPics/Lassiter.jpg</photo>
+  </person>
+  <person name="Wyatt Cross" last="Cross">
+    <drafted>33rd round (977th overall) by the Colorado Rockies.</drafted>
+    <position>Catcher.</position>
+    <bio>Coming to UNC from Legacy High School in Broomfield, Colo.</bio>
+    <photo>PlayerPics/Cross.jpg</photo>
+  </person>
+  <person name="Brendan Illies" last="Illies">
+    <drafted>33rd round (989th overall) by the New York Mets.</drafted>
+    <position>Catcher, Right-Handed Pitcher.</position>
+    <bio>Coming to UNC from Puyallup High School in Edgewood, WA.</bio>
+    <photo>PlayerPics/Illies.jpg</photo>
+  </person>
+  <person name="Trevor Kelley" last="Kelley">
+    <drafted>36h round (1,071st overall) by the Boston Red Sox.</drafted>
+    <position>Right-Handed Pitcher.</position>
+    <bio>5-3 record with a 2.55 earned run average in 41 appearances during the 2015 season.</bio>
+    <photo>PlayerPics/Kelley.jpg</photo>
+  </person>
+  <person name="Brendon Little" last="Little">
+    <drafted>36th round (1,086th overall) by the San Francisco Giants.</drafted>
+    <position>Left-Handed Pitcher.</position>
+    <bio>Coming to UNC from Conestoga High School in Malvern, PA.</bio>
+    <photo>PlayerPics/Little.jpg</photo>
+  </person>
+
+
+
+
+</people>

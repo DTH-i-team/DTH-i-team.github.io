@@ -1,0 +1,311 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+
+    <title>Tarheels in the MLB</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/styles.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <div class="row text-center">
+        <h1>Tar Heels in the MLB Draft</h1>
+        <p class="lead">Which teams are recruiting Tar Heels? Hover below to find out.</p>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+	         <div id="picList"></div>
+	  <br>
+           <!--PLUG THAT SHIT IN FOR MOBILE-->
+           <div id="person"></div>
+
+           <!--BUILD THAT SHIT-->
+           <div class="just-one">
+
+           </div>
+
+
+        <div id="credits">
+            <p>
+              *Credit to GoHeels.com, PerfectGame.org, and GameTimeCT.com for photographs.
+            </p>
+          </div><!--/#credits-->
+        </div><!--/.col-md-12-->
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+
+<!--THOSE SCRIPTS-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script>
+	  var htmlBottom= "";
+	  var htmlTop="";
+    var htmlJustOne="";
+
+
+    $(document).ready(function() {
+	     $("#message").text("DOM Loaded and Ready");
+	      loadXML();
+
+    });
+
+    function loadXML(){
+  	   $("#message").text("starting to loadXML()");
+
+  	    $.ajax({
+  	       type: "GET",
+  	       url:"MLB.xml",
+  	       dataType:"xml",
+  	       success: parseXML
+	        })
+   } // end loadXML()
+
+
+   function parseXML(d){
+	    $(d).find("person").each(function(index){
+	    var tempName= $(this).attr("name");
+	    var tempLastName= $(this).attr("last");
+
+	  //builds top Photo Nav
+	    htmlTop += "<a class='scroll' href='#" +tempLastName+"' ><img src='" +     $(this).find("photo").text() + "'width='170px' height='260px' alt='" + $(this).attr("last") + "' class='playerpics'></a>";
+
+	  //builds player profile at bottom of page for anchors
+	  htmlBottom += "<div id='" + tempLastName + "'>" + "<h3 id='" + $(this).attr("last") + "'>" + tempName + "</h3>";
+	  htmlBottom += "<p><b>Drafted:</b> " + $(this).find("drafted").text() + "</p> <p><b>Position:</b> " + $(this).find("position").text() + "</p>";
+	  htmlBottom += "<p>" + $(this).find("bio").text() + "</p>";
+	  htmlBottom += "<div class='graydots'></div></div>"
+
+	  //Keeps Link to Nav on all but first list item
+	  // if (index != 0){
+	  // htmlBottom += "<a href='#picList'> Return to Players</a><br><br>";
+	  // }
+
+
+	});
+
+
+
+//let's APPEND this shit, bitches
+	$("#person").append(htmlBottom);
+	$("#picList").append(htmlTop);
+
+  $("[alt='Lindsay']").click(function(){
+    $('#Lindsay').show();
+    $('#Jones').hide();
+    $('#Bolt').hide();
+    $('#Thornton').hide();
+    $('#Moss').hide();
+    $('#Illies').hide();
+    $('#Hovis').hide();
+    $('#Dunbar').hide();
+    $('#Lassiter').hide();
+    $('#Cross').hide();
+    $('#Kelley').hide();
+    $('#Little').hide();
+  });
+  $("[alt='Jones']").click(function(){
+    $('#Lindsay').hide();
+    $('#Jones').show();
+    $('#Bolt').hide();
+    $('#Thornton').hide();
+    $('#Moss').hide();
+    $('#Illies').hide();
+    $('#Hovis').hide();
+    $('#Dunbar').hide();
+    $('#Lassiter').hide();
+    $('#Cross').hide();
+    $('#Kelley').hide();
+    $('#Little').hide();
+  });
+  $("[alt='Bolt']").click(function(){
+    $('#Lindsay').hide();
+    $('#Jones').hide();
+    $('#Bolt').show();
+    $('#Thornton').hide();
+    $('#Moss').hide();
+    $('#Illies').hide();
+    $('#Hovis').hide();
+    $('#Dunbar').hide();
+    $('#Lassiter').hide();
+    $('#Cross').hide();
+    $('#Kelley').hide();
+    $('#Little').hide();
+  });
+  $("[alt='Lindsay']").click(function(){
+    $('#Lindsay').show();
+    $('#Jones').hide();
+    $('#Bolt').hide();
+    $('#Thornton').hide();
+    $('#Moss').hide();
+    $('#Illies').hide();
+    $('#Hovis').hide();
+    $('#Dunbar').hide();
+    $('#Lassiter').hide();
+    $('#Cross').hide();
+    $('#Kelley').hide();
+    $('#Little').hide();
+  });
+  $("[alt='Thornton']").click(function(){
+    $('#Lindsay').hide();
+    $('#Jones').hide();
+    $('#Bolt').hide();
+    $('#Thornton').show();
+    $('#Moss').hide();
+    $('#Illies').hide();
+    $('#Hovis').hide();
+    $('#Dunbar').hide();
+    $('#Lassiter').hide();
+    $('#Cross').hide();
+    $('#Kelley').hide();
+    $('#Little').hide();
+  });
+  $("[alt='Illies']").click(function(){
+    $('#Lindsay').hide();
+    $('#Jones').hide();
+    $('#Bolt').hide();
+    $('#Thornton').hide();
+    $('#Moss').hide();
+    $('#Illies').show();
+    $('#Hovis').hide();
+    $('#Dunbar').hide();
+    $('#Lassiter').hide();
+    $('#Cross').hide();
+    $('#Kelley').hide();
+    $('#Little').hide();
+  });
+  $("[alt='Hovis']").click(function(){
+    $('#Lindsay').hide();
+    $('#Jones').hide();
+    $('#Bolt').hide();
+    $('#Thornton').hide();
+    $('#Moss').hide();
+    $('#Illies').hide();
+    $('#Hovis').show();
+    $('#Dunbar').hide();
+    $('#Lassiter').hide();
+    $('#Cross').hide();
+    $('#Kelley').hide();
+    $('#Little').hide();
+  });
+  $("[alt='Lassiter']").click(function(){
+    $('#Lindsay').hide();
+    $('#Jones').hide();
+    $('#Bolt').hide();
+    $('#Thornton').hide();
+    $('#Moss').hide();
+    $('#Illies').hide();
+    $('#Hovis').hide();
+    $('#Dunbar').hide();
+    $('#Lassiter').show();
+    $('#Cross').hide();
+    $('#Kelley').hide();
+    $('#Little').hide();
+  });
+  $("[alt='Cross']").click(function(){
+    $('#Lindsay').hide();
+    $('#Jones').hide();
+    $('#Bolt').hide();
+    $('#Thornton').hide();
+    $('#Moss').hide();
+    $('#Illies').hide();
+    $('#Hovis').hide();
+    $('#Dunbar').hide();
+    $('#Lassiter').hide();
+    $('#Cross').show();
+    $('#Kelley').hide();
+    $('#Little').hide();
+  });
+  $("[alt='Kelley']").click(function(){
+    $('#Lindsay').hide();
+    $('#Jones').hide();
+    $('#Bolt').hide();
+    $('#Thornton').hide();
+    $('#Moss').hide();
+    $('#Illies').hide();
+    $('#Hovis').hide();
+    $('#Dunbar').hide();
+    $('#Lassiter').hide();
+    $('#Cross').hide();
+    $('#Kelley').show();
+    $('#Little').hide();
+  });
+  $("[alt='Little']").click(function(){
+    $('#Lindsay').hide();
+    $('#Jones').hide();
+    $('#Bolt').hide();
+    $('#Thornton').hide();
+    $('#Moss').hide();
+    $('#Illies').hide();
+    $('#Hovis').hide();
+    $('#Dunbar').hide();
+    $('#Lassiter').hide();
+    $('#Cross').hide();
+    $('#Kelley').hide();
+    $('#Little').show();
+  });
+  $("[alt='Dunbar']").click(function(){
+    $('#Lindsay').hide();
+    $('#Jones').hide();
+    $('#Bolt').hide();
+    $('#Thornton').hide();
+    $('#Moss').hide();
+    $('#Illies').hide();
+    $('#Hovis').hide();
+    $('#Dunbar').show();
+    $('#Lassiter').hide();
+    $('#Cross').hide();
+    $('#Kelley').hide();
+    $('#Little').hide();
+  });
+  $("[alt='Moss']").click(function(){
+    $('#Lindsay').hide();
+    $('#Jones').hide();
+    $('#Bolt').hide();
+    $('#Thornton').hide();
+    $('#Moss').show();
+    $('#Illies').hide();
+    $('#Hovis').hide();
+    $('#Dunbar').hide();
+    $('#Lassiter').hide();
+    $('#Cross').hide();
+    $('#Kelley').hide();
+    $('#Little').hide();
+  });
+
+//yo yo yo scroll it UP
+	$(".scroll").click(function (event) {
+	 event.preventDefault();
+	  //calculate destination place
+	  var dest = 0;
+	  if ($(this.hash).offset().top > $(document).height() - $(window).height()) {
+	    dest = $(document).height() - $(window).height();
+	  } else {
+	    dest = $(this.hash).offset().top;
+	 }
+	 //go to destination
+	  $('html,body').animate({
+	      scrollTop: dest
+	       }, 1000, 'swing');
+	  });
+      };
+
+    </script>
+
+  </body>
+</html>
